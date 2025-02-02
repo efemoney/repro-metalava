@@ -1,0 +1,15 @@
+// Signature format: 4.0
+package com.repro.metalava.liba {
+
+  public final class ComponentKt {
+    method @androidx.compose.runtime.Composable public static void ComponentText(String string, optional androidx.compose.ui.Modifier modifier);
+    method @androidx.compose.runtime.Composable public static void ComponentTextField(androidx.compose.foundation.text.input.TextFieldState state, optional androidx.compose.ui.Modifier modifier);
+    method @Deprecated @androidx.compose.runtime.Composable public static void ComponentTextField(String value, kotlin.jvm.functions.Function1<? super java.lang.String,kotlin.Unit> onValueChange, optional androidx.compose.ui.Modifier modifier);
+  }
+
+  public final class Component_androidKt {
+    method @androidx.compose.runtime.Composable public static void ComponentText(String string, android.content.Context context, optional androidx.compose.ui.Modifier modifier);
+  }
+
+}
+

@@ -1,0 +1,25 @@
+// Signature format: 4.0
+package com.repro.metalava.libb {
+
+  public sealed interface BApi {
+    method @androidx.compose.runtime.Composable public void Content(optional androidx.compose.ui.Modifier modifier);
+    method public String getName();
+    property public abstract String name;
+  }
+
+  public final class BDeprecatedApi implements com.repro.metalava.libb.BApi {
+    ctor public BDeprecatedApi(String name);
+    method @androidx.compose.runtime.Composable public void Content(androidx.compose.ui.Modifier modifier);
+    method @Deprecated @androidx.compose.runtime.Composable public void Content(String name, optional androidx.compose.ui.Modifier modifier);
+    method public String getName();
+    property public String name;
+  }
+
+  public enum BEnum {
+    enum_constant public static final com.repro.metalava.libb.BEnum Berlin;
+    enum_constant public static final com.repro.metalava.libb.BEnum London;
+    enum_constant public static final com.repro.metalava.libb.BEnum Paris;
+  }
+
+}
+
