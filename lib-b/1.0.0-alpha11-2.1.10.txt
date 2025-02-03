@@ -21,5 +21,23 @@ package com.repro.metalava.libb {
     enum_constant public static final com.repro.metalava.libb.BEnum Paris;
   }
 
+  @kotlin.jvm.JvmInline public final value class BackgroundColor implements com.repro.metalava.libb.FillColor {
+    ctor public BackgroundColor(@Deprecated long value);
+    method @androidx.compose.runtime.Composable @androidx.compose.runtime.ReadOnlyComposable public long getContentColor();
+    method @Deprecated public long getValue();
+    property @androidx.compose.runtime.Composable @androidx.compose.runtime.ReadOnlyComposable public long contentColor;
+    property @Deprecated public long value;
+  }
+
+  @Deprecated public sealed interface FillColor extends com.repro.metalava.libb.Token {
+    method @Deprecated @androidx.compose.runtime.Composable @androidx.compose.runtime.ReadOnlyComposable public long getContentColor();
+    property @Deprecated @androidx.compose.runtime.Composable @androidx.compose.runtime.ReadOnlyComposable public long contentColor;
+  }
+
+  public sealed interface Token {
+    method public long getValue();
+    property public abstract long value;
+  }
+
 }
 
